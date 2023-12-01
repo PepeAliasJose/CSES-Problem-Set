@@ -21,7 +21,7 @@ int main(){
     long valor_lista = 0;
     lista+=" ";
     for(int y = 0; y<lista.length();y++){
-        if(lista[y] == *" "){
+        if(lista[y] == ' '){
             valor_lista += stol(numero);
             numero = "";
         }else{
