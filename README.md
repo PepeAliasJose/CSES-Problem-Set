@@ -6,3 +6,4 @@
 - Repetitions       - 2023-11-29 10:17:55	C++	0.03 s	303 ch.
 - Increasing Array  - 2023-12-04 15:03:26	C++	0.06 s	590 ch.
 - Permutations      - 2023-12-05 13:20:07	C++	0.08 s	214 ch.
+- Number Spiral     - 2023-12-05 15:34:21	C++	0.17 s	687 ch.
