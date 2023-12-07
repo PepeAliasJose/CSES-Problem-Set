@@ -7,3 +7,4 @@
 - Increasing Array  - 2023-12-04 15:03:26	C++	0.06 s	590 ch.
 - Permutations      - 2023-12-05 13:20:07	C++	0.08 s	214 ch.
 - Number Spiral     - 2023-12-07 17:53:46	C++	0.04 s	587 ch.
+- Two Knights       - 2023-12-08 01:49:12	C++	0.00 s	202 ch. *
