@@ -1,13 +1,15 @@
 #include <iostream>
 #include <sstream>
-#include <vector>
 using namespace std;
 
-long calcularDiagonal(long t);
+long getDiagonal(long t);
 void getPosicion(long fila, long col);
 
 int main(){
     ios_base::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     long a, b;
     long t; cin >> t;
 
@@ -17,23 +19,22 @@ int main(){
     }
 }
 
-long calcularDiagonal(long t){ //Encontrar el valor de la diagonal 
-    return t*t-(t-1);
+long getDiagonal(long t){
+    return t*t - (t-1);
 }
 
 void getPosicion(long fila, long col){ //Segun su posicion calcular el valor respecto a la diagonal
-    
     if(fila>col){
         if(fila%2==0){
-            cout << calcularDiagonal(fila) + (fila-col) << "\n";
+            cout << getDiagonal(fila) + (fila-col) << "\n";
         }else{
-            cout << calcularDiagonal(fila) - (fila-col) << "\n";
+            cout << getDiagonal(fila) - (fila-col) << "\n";
         }
     }else{
         if(col%2==0){
-            cout << calcularDiagonal(col) - (col-fila) << "\n";
+            cout << getDiagonal(col) - (col-fila) << "\n";
         }else{
-            cout << calcularDiagonal(col) + (col-fila) << "\n";
+            cout << getDiagonal(col) + (col-fila) << "\n";
         }
     }
 }
