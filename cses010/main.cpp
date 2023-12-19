@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main(){
@@ -6,11 +7,15 @@ int main(){
     cin.tie(0);
     cout.tie(0);
 
-    long x = 0; cin >> x;
-    long long res = 1;
-
-    for(long y = 1; y<=x; y++){
-        res*=y;
+    double x = 0.0; cin >> x;
+    long res = 0;
+    for(int y = 1; true; y++){
+        if(!(pow(5,y)>x)){
+            res+=(x/pow(5,y));
+        }else{
+            break;
+        }
     }
     cout << res;
+
 }
